@@ -1,0 +1,6 @@
+# 阻止 docker 將 node_modules 複製給 Images
+# 原因 1. 怕工作資料夾中的 node_modules 已經過時不適用
+# 原因 2. 複製 node_modules 很花時間，而且如果 Image 中有一層的指令為 npm install，那麼更沒必要使用前者
+node_modules
+
+readme.txt
